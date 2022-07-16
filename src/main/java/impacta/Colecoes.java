@@ -44,7 +44,27 @@ public class Colecoes {
         System.out.println(mapaBasicoInline);
 
         Map<String, String> mapaBasicoReduzido = Map.of("chaveInline1", "valorInline1", "chaveInline2", "valorInline2");
-        System.out.println(mapaBasicoReduzido);        
+        System.out.println(mapaBasicoReduzido); 
+        
+        for (int i = 0; i < listaNomes.size(); i++) {
+            listaNomes.get(i);
+        }
+
+        for (String string : listaNomes) {
+            System.out.println(string);
+        }
+
+        for (String chave : mapaBasicoReduzido.keySet()) {
+            System.out.println(mapaBasicoReduzido.get(chave));
+        }
+
+        for (String valor : mapaBasicoReduzido.values()) {
+            System.out.println(valor);
+        }
+
+        for (Map.Entry<String, String> registro : mapaBasicoReduzido.entrySet()) {
+            System.out.printf("Chave: [%s] - Valor: [%s]%n", registro.getKey(), registro.getValue());
+        }
     }
 
 }
